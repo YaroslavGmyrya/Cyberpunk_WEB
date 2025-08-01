@@ -10,9 +10,13 @@ const CustomTextTemplate: React.FC<IText> = ({ color, children }) => {
 };
 
 const CustomText = (color: string) => {
-  return ({ children }: { children: React.ReactNode }) => (
+  const ColoredTextComponent = ({ children }: { children: React.ReactNode }) => (
     <CustomTextTemplate color={color}>{children}</CustomTextTemplate>
   );
+
+  ColoredTextComponent.displayName = `CustomText(${color})`;
+
+  return ColoredTextComponent;
 };
 
 export default CustomText;
