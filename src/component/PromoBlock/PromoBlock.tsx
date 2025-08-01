@@ -59,10 +59,10 @@ const PromoBlock = () => {
   };
 
 
-  type User = {
-    name: string;
-    email: string;
-  };
+  // type User = {
+  //   name: string;
+  //   email: string;
+  // };
 
   // const FetchUserData = async (user: User): Promise<void> => {
   //   try {
